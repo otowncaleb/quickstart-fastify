@@ -3,7 +3,10 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "lint": "prettier --check . "
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "prettier": "^3.1.1"
+  }
 }
