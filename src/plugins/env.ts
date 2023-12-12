@@ -7,7 +7,7 @@ const schema = Type.Object({
     Type.Literal("development"),
     Type.Literal("production"),
   ]),
-  PORT: Type.Number(),
+  PORT: Type.Number({ default: 8080 }),
 });
 
 type Schema = Static<typeof schema>;
