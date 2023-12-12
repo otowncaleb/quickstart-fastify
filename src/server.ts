@@ -1,14 +1,9 @@
-import fastifyFactory from "fastify";
+import { initFastify } from "./app";
 
 export async function startServer(): Promise<void> {
-  const fastify = fastifyFactory();
-
-  fastify.get("/ping", async () => {
-    return "pong!";
-  });
-
+  const fastify = await initFastify();
   try {
-    await fastify.listen({ port: 8080 });
+    await fastify.listen({ port: fastify.config.PORT });
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
