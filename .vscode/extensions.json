@@ -6,6 +6,7 @@
     "christian-kohler.npm-intellisense",
     "davidanson.vscode-markdownlint",
     "ms-azuretools.vscode-docker",
-    "oven.bun-vscode"
+    "oven.bun-vscode",
+    "github.vscode-github-actions"
   ]
 }
