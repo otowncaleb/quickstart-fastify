@@ -4,6 +4,8 @@
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
     "christian-kohler.npm-intellisense",
-    "davidanson.vscode-markdownlint"
+    "davidanson.vscode-markdownlint",
+    "ms-azuretools.vscode-docker",
+    "oven.bun-vscode"
   ]
 }

@@ -9,7 +9,7 @@
   "dependencies": {
     "@fastify/env": "^4.3.0",
     "@sinclair/typebox": "^0.31.28",
-    "fastify": "^4.24.3",
+    "fastify": "4.24.3",
     "fastify-plugin": "^4.5.1"
   },
   "devDependencies": {
@@ -26,5 +26,12 @@
     "prettier": "^3.1.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "bun-create": {
+    "postinstall": [
+      "truncate -s 0 README.md",
+      "prettier --write .",
+      "rm .env.vault"
+    ]
   }
 }

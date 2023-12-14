@@ -4,7 +4,9 @@ import { configureLogger } from "./logger";
 import { routes } from "./routes";
 
 export async function initFastify(): Promise<FastifyInstance> {
-  const fastify = await fastifyFactory(configureLogger());
+  const fastify = await fastifyFactory({
+    ...configureLogger(),
+  });
 
   // Configure plugins
   await fastify.register(env);

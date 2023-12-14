@@ -4,7 +4,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Node: Nodemon",
+      "name": "Launch: Nodemon",
       "runtimeExecutable": "bun",
       "runtimeArgs": ["start"],
       "outputCapture": "std",
@@ -13,7 +13,7 @@
     {
       "type": "node",
       "request": "attach",
-      "name": "Node: Nodemon",
+      "name": "Attach: Nodemon",
       "processId": "${command:PickProcess}"
     }
   ]

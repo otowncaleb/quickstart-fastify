@@ -12,9 +12,7 @@ export function configureLogger(): FastifyServerOptions {
     };
   } else {
     return {
-      logger: {
-        base: null,
-      },
+      logger: true,
     };
   }
 }
