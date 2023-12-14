@@ -7,10 +7,9 @@
     "start": "nodemon ./src/index.ts --quiet"
   },
   "dependencies": {
-    "@fastify/env": "^4.3.0",
     "@sinclair/typebox": "^0.31.28",
-    "fastify": "4.24.3",
-    "fastify-plugin": "^4.5.1"
+    "env-schema": "^5.2.1",
+    "fastify": "4.24.3"
   },
   "devDependencies": {
     "@types/node": "^20.10.4",

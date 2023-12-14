@@ -1,10 +1,12 @@
 import { type FastifyServerOptions } from "fastify";
+import { config } from "./config";
 
 export function configureLogger(): FastifyServerOptions {
-  if (process.env.NODE_ENV === "development") {
+  if (config.NODE_ENV === "development") {
     return {
       logger: {
         base: null,
+        level: config.LOG_LEVEL,
         transport: {
           target: "pino-pretty",
         },
@@ -12,7 +14,9 @@ export function configureLogger(): FastifyServerOptions {
     };
   } else {
     return {
-      logger: true,
+      logger: {
+        level: config.LOG_LEVEL,
+      },
     };
   }
 }

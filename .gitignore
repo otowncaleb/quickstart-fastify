@@ -4,3 +4,5 @@ dist
 ## dotenv
 .env*
 !.env.vault
+.flaskenv*
+!.env.project
