@@ -7,5 +7,9 @@ bunx npm-check-updates -u
 ```
 
 ```shell
+bunx install
+```
+
+```shell
 bunx dotenv-vault new
 ```
